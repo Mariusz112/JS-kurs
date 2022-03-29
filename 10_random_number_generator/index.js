@@ -1,18 +1,11 @@
 let x;
-let y = 5;
-let z = 9;
-let maximum;
-let minimum;
-
-//x = Math.round(x);
-//x = Math.floor(x);
-//x = Math.ceil(x);
-//x = Math.pow(x, 2);
-//x = Math.sqrt(x);
-//x = Math.abs(x);
-
-//maximum = Math.max(x, y, z);
-//minimum = Math.min(x, y, z);
-
-x = Math.PI;
-console.log(x);
+let y;
+let z;
+document.getElementById("rollButton").onclick = function(){
+    x = Math.floor(Math.random() * 6) + 1;
+    y = Math.floor(Math.random() * 6) + 1;
+    z = Math.floor(Math.random() * 6) + 1;
+    document.getElementById("xlabel").innerHTML = x;
+    document.getElementById("ylabel").innerHTML = y;
+    document.getElementById("zlabel").innerHTML = z;
+}
